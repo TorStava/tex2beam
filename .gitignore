@@ -1,0 +1,9 @@
+*.egg-info/
+__pycache__/
+.scrapy/
+.tmp
+.env
+.pyc 
+.vscode
+data/
+logs/
