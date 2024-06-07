@@ -1,3 +1,6 @@
+channels:
+  - PyPi
+  - conda-forge
 dependencies:
   - absl-py
   - arxiv
