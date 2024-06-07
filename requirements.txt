@@ -14,6 +14,7 @@ llama-index-embeddings-openai
 mypy
 nltk
 openai
+pdf2docx
 pip
 pre-commit
 pydantic
