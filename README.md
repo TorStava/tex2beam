@@ -14,7 +14,7 @@ Python pip:
 
 Conda:
 
-    conda env create -f environment.yaml -n {ENVIRONMENT NAME}
+    conda env create -f environment.yml -n {ENVIRONMENT NAME}
 
 
 # Installation
