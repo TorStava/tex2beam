@@ -1,6 +1,8 @@
 channels:
   - PyPi
   - conda-forge
+  - pytorch 
+  - nvidia
 dependencies:
   - absl-py
   - arxiv
@@ -33,3 +35,5 @@ dependencies:
   - seaborn
   - sentence-transformers
   - tiktoken=0.7
+  - pip:
+    - pdf2docx
