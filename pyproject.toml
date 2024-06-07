@@ -1,0 +1,29 @@
+[project]
+name = "tex2beam"
+version = "0.1.0"
+description = "A tool for converting LaTeX documents to BEAM files"
+readme = "README.md"
+authors = [
+    {name = "Tor O. Stava", email = "tor.olav.stava@gmail.com"},
+    ]
+keywords = ["latex", "beam", "erlang", "elixir", "compiler"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+]
+
+
+[tool.black]
+line-length = 80
+target-version = ['py311']
+
+[tool.setuptools]
+packages = ['tex2beam', 'tex2beam.metrics', 'tex2beam.utils']
