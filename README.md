@@ -31,6 +31,10 @@ To install the package in development (editable) mode, use the following command
 
     pip install --editable .
 
+# OpenAI API Token
+
+All methods that access the OpenAI API requires a valid API TOKEN to be set in the `.env` file, or given as input parameter on the command line, or as input to the specific function. See the docstrings for the relevant functions for more details.
+
 # Getting Started
 
 Loading the module for use in your own code:
@@ -39,7 +43,13 @@ Loading the module for use in your own code:
 
 # Generating Presentations
 
-To generate presentations run the main `tex2beam` script in the terminal, e.g.:
+To generate a presentation from the report $\LaTeX$ source file run the `tex2beam.main` module in the terminal, e.g.:
 
-    python tex2beam/main.py --source-folder {SOURCE_FOLDER} --target-folder {TARGET_FOLDER} --method "rag"
+    python -m tex2beam.main --latex-path {LATEX_PATH} --output-path {OUTPUT_PATH} --method "rag"
 
+
+To generate presentations from all report source file in a folder run the main `tex2beam` script in the terminal, e.g.:
+
+    python -m tex2beam.main --source-folder {SOURCE_FOLDER} --target-folder {TARGET_FOLDER} --method "rag"
+
+NOTE: Be careful if you run this on a large dataset as the conversions can consume a lot of tokens, which will incur costs.
