@@ -17,6 +17,7 @@ dependencies:
   - ipython
   - ipywidgets
   - llama-index-embeddings-openai
+  - llama-index-llms-openai
   - mypy
   - nltk
   - openai
@@ -36,4 +37,6 @@ dependencies:
   - sentence-transformers
   - tiktoken=0.7
   - pip:
+    - git+https://github.com/alvinwan/TexSoup@master
+    - llama-index-vector-stores-chroma
     - pdf2docx
