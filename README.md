@@ -53,3 +53,24 @@ To generate presentations from all report source file in a folder run the main `
     python -m tex2beam.main --source-folder {SOURCE_FOLDER} --target-folder {TARGET_FOLDER} --method "rag"
 
 NOTE: Be careful if you run this on a large dataset as the conversions can consume a lot of tokens, which will incur costs.
+
+Available command line options can be viewed in the help output:
+
+    python -m tex2beam.main --help
+
+See the code docstrings for more information.
+
+# Metrics
+
+To calculate the metrics for a generated presentation against a reference presentation, use the following command:
+
+    python -m tex2beam.run_metrics --scoring-method {bert, rouge} \\
+        --predictions-file {PREDICTIONS_FILE} \\
+        --reference-file {REFERENCE_FILE} \\
+        --output {OUTPUT_FILE}
+
+Available command line options can be viewed in the help output:
+
+    python -m tex2beam.run_metrics --help
+
+See the code docstrings for more information.
